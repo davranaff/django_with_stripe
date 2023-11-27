@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block title %}
+	<title>Thanks for your order!</title>
+{% endblock title %}
+
+{% block content %}
+	<div>
+		<h1>Purchase has been cancelled.</h1>
+	    <p>
+	      If you have any questions, please contact the administration!
+	      <a href="mailto:admin@admin.com">admin@admin.com</a>.
+	      <br>
+	      <a href="{% url 'app:home' %}">Go to home page</a>.
+	    </p>
+	</div>
+{% endblock content %}

@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block content %}
+	<div>
+		<h1>#{{ item.pk }} {{ item.name }}</h1>
+		<p>{{ item.description }}</p>
+		<p>{{ item.price }} USD</p>
+		<form action="{% url 'app:buy' item.pk %}" method="GET">
+			<button>Купить!</button>
+		</form>
+	</div>
+{% endblock content %}
